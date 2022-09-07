@@ -1,0 +1,26 @@
+@import "./../../styles/breakpoints";
+.container {
+    background: #22282f;
+    padding: 40px 72px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @media screen and (max-width: $breakpoint-max) {
+        flex-direction: column;
+    }
+    &__iconsContainer {
+        display: flex;
+        @media screen and (max-width: $breakpoint-max) {
+            margin-bottom: 8px;
+        }
+        a {
+            margin-right: 30px;
+        }
+    }
+    &__copyrightContainer {
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 16px;
+        color: #6e7883;
+    }
+}

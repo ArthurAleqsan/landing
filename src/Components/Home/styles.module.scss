@@ -1,0 +1,74 @@
+@import "./../../styles/breakpoints";
+.container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    // max-width: 1280px;
+    // margin: 0 auto;
+
+    &__background {
+        width: 100%;
+        max-height: 853px;
+        min-height: 50vh;
+        background: #000;
+        @media screen and (max-width: $breakpoint-max) {
+            object-fit: cover;
+        }
+    }
+    &__logo {
+        display: none;
+        @media screen and (max-width: $breakpoint-max) {
+            display: flex;
+            position: absolute;
+            top: 25%;
+            width: 80px;
+            height: 80px;
+        }
+    }
+    &__frontWrapper {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: #fff;
+        &__textWrapper {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 80px;
+            h1 {
+                font-weight: 600;
+                font-size: 64px;
+                line-height: 72px;
+            }
+            h5 {
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 20px;
+            }
+            @media screen and (max-width: $breakpoint-max) {
+                margin-bottom: 40px;
+                h1 {
+                    font-size: 32px;
+                    line-height: 40px;
+                }
+            }
+        }
+        button {
+            width: 159px;
+            height: 56px;
+            background-color: #d64320;
+            border-radius: 12px;
+            color: #fff;
+            transition: background-color ease-in-out 0.2s;
+            &:hover {
+                background-color: #cc2500;
+            }
+        }
+    }
+    @media screen and (max-width: $breakpoint-max) {
+        padding-top: 75px;
+    }
+}

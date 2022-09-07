@@ -1,0 +1,39 @@
+@import "./../../styles/breakpoints";
+.container {
+        // max-width: 1280px;
+        // margin: 0 auto;
+        @media screen and (max-width: $breakpoint-max) {
+                display: flex;
+                flex-direction: column;
+                figure {
+                        width: 100%;
+                }
+        }
+        figure {
+                width: 33.3%;
+                height: 240px;
+                overflow: hidden;
+                position: relative;
+                display: inline-block;
+                vertical-align: top;
+                box-shadow: 0 0 5px #ddd;
+                @media screen and (max-width: $breakpoint-max) {
+                        width: 100%;
+                }
+        }
+
+        figure img {
+                height: 100%;
+                width: 100%;
+                object-fit: cover;
+                -webkit-transition: all 0.5s linear;
+                transition: all 0.5s linear;
+                -webkit-transform: scale3d(1, 1, 1);
+                transform: scale3d(1, 1, 1);
+        }
+
+        figure:hover img {
+                -webkit-transform: scale3d(1.2, 1.2, 1);
+                transform: scale3d(1.2, 1.2, 1);
+        }
+}

@@ -1,0 +1,6 @@
+{
+  "projects": {
+    "demo": "bada-bing-demo",
+    "default": "bada-bing-demo"
+  }
+}

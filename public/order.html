@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="Yeeros landing page"
+    />
+    <script src="https://s3.eu-central-1.amazonaws.com/anyexcuse-hw.testing.mqd.me/js/app.js"></script>
+    <link href="./order-styles.css" rel="stylesheet"></link>
+    <link href="https://s3.eu-central-1.amazonaws.com/anyexcuse-hw.testing.mqd.me/css/app.css" rel="stylesheet"></link>
+    <!--
+      Notice the use of %PUBLIC_URL% in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+    <title>Yeeros!</title>
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <header class="container-header">
+      <a href="/" class='container-logo'>
+        <img src='https://anyexcuse-stock.testing.mqd.me/media/images/website/39195956-f2de-4e3b-825c-57b08ba8f9b5/image.png' alt="Bada Bing!" />
+      </a>
+      <div class="navigation">
+        <a class="navigation-item" href="/">Home</a>
+        <a class="navigation-item" href="/#About">About</a>
+        <a class="navigation-item" href="/#Contact">Contact</a>
+      </div>
+      <!-- <img src='./burger.svg' alt = 'burger' class="burger-icon" id ='burgerIcon'/>
+      <div class="burger-navigation">
+        <img
+        src='./close.svg'
+        alt="close"
+        className={styles.container__burger__navigation__close}
+        onClick={toggleMenu}
+      />
+        <a class="burger-navigation-item" href="/">Home</a>
+        <a class="burger-navigation-item" href="/#About">About</a>
+        <a class="burger-navigation-item" href="/#Contact">Contact</a>
+      </div> -->
+      <script>
+        const elem = document.getElementById('burgerIcon');
+        elem.addEventListener('click', () => {
+          elem.classList.add('burger-navigation-active');
+        })
+      </script>
+    </header>
+    <div id="app" data-website-id='39195956-f2de-4e3b-825c-57b08ba8f9b5'>
+        <script src="https://s3.eu-central-1.amazonaws.com/anyexcuse-hw.testing.mqd.me/js/app.js"></script>
+    </div>
+    <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
+
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
+
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+    -->
+  </body>
+</html>

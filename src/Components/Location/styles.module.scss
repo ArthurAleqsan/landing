@@ -1,0 +1,27 @@
+@import "./../../styles/breakpoints";
+.container {
+    background-color: #f4f5f6;
+    padding: 120px 72px;
+    // max-width: 1280px;
+    // margin: 0 auto;
+    &__title {
+        font-weight: 600;
+        font-size: 40px;
+        line-height: 48px;
+        color: #181c21;
+        margin-bottom: 60px;
+    }
+    &__locationsContainer {
+        display: flex;
+        justify-content: space-between;
+        @media screen and (max-width: $breakpoint-max) {
+            flex-direction: column;
+        }
+        &__block {
+            width: 45%;
+            @media screen and (max-width: $breakpoint-max) {
+                width: 100%;
+            }
+        }
+    }
+}
